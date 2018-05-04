@@ -13,7 +13,7 @@
 		<link rel="stylesheet" href="css/font.css">
 		<link rel="stylesheet" href="css/button.css">
 		<link rel="stylesheet" href="css/layout.css">
-		<link rel="icon" href="images/favicon.jpg" type="images/x-icon">
+		<link rel="icon" href="images/DGK-CIS-favicon.png" type="images/x-icon">
 		<!-- 瀑布流 -->
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<!-- hover -->
@@ -22,6 +22,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/hamburger.css">
 	</head>
 	<body>	
 	<div id="totop" class="wrapper">
@@ -33,11 +34,29 @@
 			</a>
 		</div>
 		<!-- end gototop -->
+		<!-- start mobile-menu -->
+		<div class="page-mobile-menu web-hidden">
+			 <nav role="navigation">
+			    <div id="menuToggle">
+			      <input type="checkbox" />
+			      <span></span>
+			      <span></span>
+			      <span></span>
+			      <ul id="menu">
+			        <a href="#SERVICE"><li><h3>SERVICE</h3></li></a>
+			        <a href="#PROGRAM"><li><h3>PROGRAM</h3></li></a>
+			        <a href="projects.html"><li><h3>PROJECTS</h3></li></a>
+			        <a href="#CONTACT"><li><h3>CONTACT</h3></li></a>
+			      </ul>
+			    </div>
+			 </nav>
+		</div>
+		<!-- end mobile-menu -->
 		<!-- start header -->
 		<div class="header">
 			<div class="container">
-				<a href="index.html" class="logo logo-content">睿弘數位國際股份有限公司</a>
-				<div class="menu">
+				<a href="index.html" class="logo page-logo-content">睿弘數位國際股份有限公司</a>
+				<div class="page-menu mobile-hidden">
 					<ul class="menu-list">
 						<li class="menu-item"><a href="#SERVICE" class="yellow-font"><h4>SERVICE</h4></a></li>	
 						<li class="menu-item"><a href="#PROGRAM" class="yellow-font"><h4>PROGRAM</h4></a></li>	
@@ -55,52 +74,151 @@
 				<div class="container">
 					<div class="title"><h2>我該如何選擇適合的方案？</h2></div>
 					<div class="line"></div>
-					<div class="program-list-content row">
-						<div class="col-lg-4">
-							<div class="black-box">
-								<div class="program-title white-font"><h3>中小企業形象官網</h3></div>
-							</div>
-							<div class="white-card">
-								<div class="program-item"><h4>網址購買</h4></div>
-								<div class="program-item"><h4>虛擬主機</h4></div>
-								<div class="program-item"><h4>線上聯絡表單</h4></div>
-								<div class="program-item"><h4>Facebook 社群串接</h4></div>
-								<div class="program-item"><h4>型錄展示</h4></div>
-								<div class="program-item"><h4>最新消息</h4></div>
-								<div class="program-item"><h4>Google Map 崁入</h4></div>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="black-box">
-								<div class="program-title white-font"><h3>電子商務網站</h3></div>
-							</div>
-							<div class="white-card">
-								<div class="program-item"><h4>會員管理系統</h4></div>
-								<div class="program-item"><h4>訂單管理系統</h4></div>
-								<div class="program-item"><h4>庫存管理系統</h4></div>
-								<div class="program-item"><h4>商品自由上下架</h4></div>
-								<div class="program-item"><h4>折扣碼使用</h4></div>
-								<div class="program-item"><h4>線上客服功能</h4></div>
-								<div class="program-item"><h4>金流、物流串接</h4></div>
-								<div class="program-item"><h4>安裝流量分析碼</h4></div>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="yellow-box">
-								<div class="program-title"><h3>高度客製化系統</h3></div>
-							</div>
-							<div class="white-card">
-								<div class="program-item"><h4>電子商務網站</h4></div>
-								<div class="program-item"><h4>詢價功能網站</h4></div>
-								<div class="program-item"><h4>預約管理系統</h4></div>
-								<div class="program-item"><h4>活動課程系統</h4></div>
-								<div class="program-item"><h4>產品型錄系統</h4></div>
-								<div class="program-item"><h4>訂房預約系統</h4></div>
-								<div class="program-item"><h4>多國語系網站</h4></div>
-								<div class="program-item"><h4>線上教學網站</h4></div>
-							</div>
+					<!-- start web table -->
+					<div class="program-list-content">
+						<div class="table mobile-hidden">
+							<table width="100%">
+								<thead>
+								<tr>
+								<th class="bg-light-gray" style="width: 40px;"></th>
+								<th class="bg-dark-gray white-font" style="width: 80px;">中小企業形象官網</th>
+								<th class="bg-black white-font" style="width: 80px;">電子商務網站</th>
+								<th class="bg-yellow" style="width: 80px;">高度客製化系統</th>
+								</tr>
+								</thead>
+								<tbody class="tbody">
+								<tr>
+								<td>每日使用流量(IP數)</td>
+								<td>200/日</td>
+								<td>400/日</td>
+								<td>依需求客製</td>
+								</tr>
+								<tr>
+								<td>後台上架產品(作品)</td>
+								<td>-</td>
+								<td>400件</td>
+								<td>依需求客製</td>
+								</tr>
+								<tr>
+								<td>網站頁數<br>(頁面尺寸:1280X1024)</td>
+								<td>6頁</td>
+								<td>8頁</td>
+								<td>依需求客製</td>
+								</tr>
+								<tr>
+								<td>1年免費網址/主機</td>
+								<td><i class="fas fa-check"></i></td>
+								<td><i class="fas fa-check"></i></td>
+								<td><i class="fas fa-check"></i></td>
+								</tr>
+								<tr>
+								<td>Google流量分析</td>
+								<td><i class="fas fa-check"></i></td>
+								<td><i class="fas fa-check"></i></td>
+								<td><i class="fas fa-check"></i></td>
+								</tr>
+								<tr>
+								<td>Facebook Like Box</td>
+								<td><i class="fas fa-check"></i></td>
+								<td><i class="fas fa-check"></i></td>
+								<td><i class="fas fa-check"></i></td>
+								</tr>
+								<tr>
+								<td>首頁輪播Banner[後台]</td>
+								<td>-</td>
+								<td><i class="fas fa-check"></i></td>
+								<td><i class="fas fa-check"></i></td>
+								</tr>
+								<tr>
+								<td>最新消息[後台]</td>
+								<td>-</td>
+								<td><i class="fas fa-check"></i></td>
+								<td><i class="fas fa-check"></i></td>
+								</tr>
+								<tr>
+								<td>產品/作品上架[後台]</td>
+								<td>-</td>
+								<td><i class="fas fa-check"></i></td>
+								<td><i class="fas fa-check"></i></td>
+								</tr>
+								<tr>
+								<td>管理介面[後台]</td>
+								<td>-</td>
+								<td><i class="fas fa-check"></i></td>
+								<td><i class="fas fa-check"></i></td>
+								</tr>
+								</tbody>
+							</table>
 						</div>
 					</div>
+					<!-- end web table -->
+					<!-- start mobile tab -->
+					<div class="mobile-tab web-hidden">
+						<table class="tabbedTable">
+						  <tr>
+						    <th width="50">每日使用流量(IP數)</th>
+						    <th data-tabbedTable="中小企業形象官網">200/日</th>
+						    <th data-tabbedTable="電子商務網站">400/日</th>
+						    <th data-tabbedTable="高度客製化系統">依需求客製</th>
+						  </tr>
+						  <tr>
+						  	<th width="50">後台上架產品(作品)</th>
+						  	<td>-</td>
+						  	<td>400件</td>
+						  	<td>依需求客製</td>
+						  </tr>
+						  <tr>
+						  	<th width="50">網站頁數(頁面尺寸:1280X1024)</th>
+						  	<td>6頁</td>
+						  	<td>8頁</td>
+						  	<td>依需求客製</td>
+						  </tr>
+						  <tr>
+						  	<th width="50">1年免費網址/主機</th>
+						  	<td><i class="fas fa-check"></i></td>
+						  	<td><i class="fas fa-check"></i></td>
+						  	<td><i class="fas fa-check"></i></td>
+						  </tr>
+						  <tr>
+						  	<th width="50">Google流量分析</th>
+						  	<td><i class="fas fa-check"></i></td>
+						  	<td><i class="fas fa-check"></i></td>
+						  	<td><i class="fas fa-check"></i></td>
+						  </tr>
+						  <tr>
+						  	<th width="50">Facebook Like Box</th>
+						  	<td><i class="fas fa-check"></i></td>
+						  	<td><i class="fas fa-check"></i></td>
+						  	<td><i class="fas fa-check"></i></td>
+						  </tr>
+						  <tr>
+						  	<th width="50">首頁輪播Banner[後台]</th>
+						  	<td>-</td>
+						  	<td><i class="fas fa-check"></i></td>
+						  	<td><i class="fas fa-check"></i></td>
+						  </tr>
+						  <tr>
+						  	<th width="50">最新消息[後台]</th>
+						  	<td>-</td>
+						  	<td><i class="fas fa-check"></i></td>
+						  	<td><i class="fas fa-check"></i></td>
+						  </tr>
+						  <tr>
+						  	<th width="50">產品/作品上架[後台]</th>
+						  	<td>-</td>
+						  	<td><i class="fas fa-check"></i></td>
+						  	<td><i class="fas fa-check"></i></td>
+						  </tr>
+						  <tr>
+						  	<th width="50">管理介面[後台]</th>
+						  	<td>-</td>
+						  	<td><i class="fas fa-check"></i></td>
+						  	<td><i class="fas fa-check"></i></td>
+						  </tr>
+						</table>
+					</div>
+					
+					<!-- end mobile tab -->
 					<div class="col-lg-12">
 						<div class="button">
 							<a href="tel:0917-168-195" class="btn btn-success">
@@ -170,48 +288,47 @@
 			<!-- start contact -->
 			<div id="CONTACT" class="contact">
 				<div class="container">
-						<div class="title"><h1>CONTACT</h1></div>
-						<div class="line"></div>
-						<div class="contact-content">
-							<h3>歡迎來信，由專人為您免費諮詢！</h3>
-						</div>
-						<div class="button">
-								<a href="mailto:service@digikal.com?Subject=Hello%20again" class="btn btn-info">
-									<i class="fas fa-envelope"></i>&nbsp;立即諮詢
-								</a>
-						</div>
-						<div class="map-card">
-							<div id="map"></div>
-						</div>
+					<div class="title"><h1>CONTACT</h1></div>
+					<div class="line"></div>
+					<div class="contact-content">
+						<h3>歡迎來信，由專人為您免費諮詢！</h3>
+					</div>
+					<div class="button">
+							<a href="mailto:service@digikal.com?Subject=Hello%20again" class="btn btn-info">
+								<i class="fas fa-envelope"></i>&nbsp;立即諮詢
+							</a>
+					</div>
+					<div class="map-card">
+						<div id="map"></div>
+					</div>
 				</div>
 				<div class="footer">
-						<div class="container">
-							<div class="footer-content">
-								<div class="row">
-									<div class="col-lg-3">
-										<a href="index.html" class="logo">睿弘數位國際股份有限公司</a>
+					<div class="container">
+						<div class="footer-content">
+							<!-- <div class="row"> -->
+								<!-- <div class="col-lg-2"> -->
+									<a href="index.html" class="footer-logo mobile-hidden">睿弘數位股份有限公司</a>
+								<!-- </div> -->
+								<!-- <div class="col-lg-7"> -->
+									<div class="info white-font">
+										<p><i class="fas fa-map-marker-alt"></i>&nbsp;<a href="https://goo.gl/maps/oCUkqmT1hR42" target="_blank" class="white-font">台北市大安區忠孝東路三段136號5樓之一</a></p>
+										<p><i class="fas fa-phone"></i><a href="tel:02-2771-0968" class="white-font">(02) 2771-0968</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="tel:0917-168-195" class="white-font">0917-168-195</a></p>
+										<p><i class="fas fa-envelope"></i>&nbsp;<a href="mailto:service@digikal.com?Subject=Hello%20again" class="white-font" target="_top">service@digikal.com</a></p>
 									</div>
-									<div class="col-lg-6">
-										<div class="white-font">
-											<p><i class="fas fa-map-marker-alt"></i>&nbsp;<a href="https://goo.gl/maps/oCUkqmT1hR42" target="_blank" class="white-font">台北市大安區忠孝東路三段136號5樓之一</a></p>
-											<p><i class="fas fa-phone"></i><a href="tel:02-2771-0968" class="white-font">(02) 2771-0968</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="tel:0917-168-195" class="white-font">0917-168-195</a></p>
-											<p><i class="fas fa-envelope"></i>&nbsp;<a href="mailto:service@digikal.com?Subject=Hello%20again" class="white-font" target="_top">service@digikal.com</a></p>
-
-										</div>
+								<!-- </div> -->
+								<!-- <div class="col-lg-3"> -->
+									<div class="map-button mobile-hidden">
+											<a href="https://goo.gl/maps/oCUkqmT1hR42" target="_blank" class="btn btn-primary ">
+												<i class="fas fa-map-marker-alt"></i>&nbsp;Google Map
+											</a>
 									</div>
-									<div class="col-lg-3">
-										<div class="map-button">
-												<a href="https://goo.gl/maps/oCUkqmT1hR42" target="_blank" class="btn btn-primary ">
-													<i class="fas fa-map-marker-alt"></i>&nbsp;Google Map
-												</a>
-										</div>
-									</div>
-								</div>
+								<!-- </div> -->
 							</div>
 						</div>
+					</div>
 				</div>
 				<div class="copyright">
-						Copyright © 2018 睿弘數位國際股份有限公司 | All Rights Reserved
+					Copyright © 2018 睿弘數位股份有限公司 | All Rights Reserved
 				</div>
 			</div>
 			<!-- end contact -->
@@ -234,6 +351,90 @@
 		<!-- slider -->
 		<script src="plugin/owl.carousel/owl.carousel.min.js"></script>
 		<script> 
+				// tab
+				(function( $ ) { 
+				    $.fn.tabbedTable = function() { 
+				        this.filter( "table" ).each(function() {
+				            var tabs = [];
+				            var table = $(this);
+				            var randomId = 'tabbedTable-' + Math.floor((Math.random() * 100000) + 1);
+				          
+				            // wrap our table
+				            table.wrap('<div class="tabbedTable-wrapper">');
+				          
+				            // add an id
+				            table.addClass(randomId);
+				          
+				            // add a style tag to store visible / invisible columns
+				            $('body').append('<style class="'+ randomId +'-style"></style>');
+				          
+				            var wrapper = table.parent('.tabbedTable-wrapper');
+				          
+				            // Find table headers to hide
+				            $('th', table).each(function(i) {
+				              var tabName = $(this).attr('data-tabbedTable');
+				              if(tabName !== undefined) {
+				                var columnNumber = i + 1;
+				                // hide the columns
+				                // $('th:nth-child('+ columnNumber +'), td:nth-child('+ columnNumber +')', table).hide();
+				                
+				                // add the tabname to 
+				                if(tabs.indexOf(tabName) ==  -1) {
+				                  tabs.push(tabName);
+				                } 
+				              }
+				            });
+				          
+				            // add buttons
+				            var buttons = '';
+				            for (t = 0; t < tabs.length; t++) { 
+				                buttons += '<label class="tabbedTable-label">'+ tabs[t] + '</label>';
+				            }
+				            wrapper.prepend('<div class="tabbedTable-labels">' + buttons + '</div>');
+				          
+				            // click events
+				            $('.tabbedTable-label', wrapper).on('click', function(){
+				              $('.tabbedTable-label', wrapper).removeClass('tabbedTable-label--active');
+				              $(this).addClass('tabbedTable-label--active');
+				              var tabSelected = $(this).text();
+				              var styleContent = '';
+				              $('th', table).each(function(i){
+				                if($(this).attr('data-tabbedTable') !== undefined) {
+				                  // header index
+				                  var columnNumber = i + 1;
+
+				                  if(tabSelected == $(this).attr('data-tabbedTable')) {
+				                    // show columns
+				                    // $('th:nth-child('+ columnNumber +'), td:nth-child('+ columnNumber +')', table).show();
+				                    styleContent += '.'+ randomId +' th:nth-child(' + columnNumber + ') { display: table-cell; } ';
+				                    styleContent += '.'+ randomId +' td:nth-child(' + columnNumber + ') { display: table-cell; } ';
+				                  }
+				                  else {
+				                    // show columns
+				                    // $('th:nth-child('+ columnNumber +'), td:nth-child('+ columnNumber +')', table).hide(); 
+				                    styleContent += '.'+ randomId +' th:nth-child(' + columnNumber + ') { display: none; } ';
+				                    styleContent += '.'+ randomId +' td:nth-child(' + columnNumber + ') { display: none; } ';                 
+				                  }                  
+				                }
+				              });
+				              
+				              //var styleContent = '.'+ randomId +' td:nth-child(2) { background: red; }';
+				              
+				              // update <style> tag
+				              $('.' + randomId +'-style').html(styleContent);
+				            });
+				          
+				            // click first
+				            $('.tabbedTable-labels label:first', wrapper).click();
+				        }); 
+				        return this; 
+				    }; 
+				}( jQuery ));
+				 
+				// Usage example:
+				$( ".tabbedTable" ).tabbedTable();
+
+
 				// hover For Demo purposes only (show hover effect on mobile devices)
 				[].slice.call( document.querySelectorAll('a[href="#"') ).forEach( function(el) {
 					el.addEventListener( 'click', function(ev) { ev.preventDefault(); } );
@@ -246,7 +447,7 @@
 					viewportFactor : 0.2
 				} );
 
-				// 毛點跳轉動畫
+				// 錨點慢慢滑過
 				$(document).on("click", 'a[href^="#"]', function(event) {
 				  event.preventDefault();
 

@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 .header{
-	height: 80px;
+	height: 100px;
 	background-color: #000;
 }
 
@@ -15,14 +15,18 @@
 }
 
 .logo-content{
+	top: 32px;
+	left: 32px;
+}
+.page-logo-content{
 	margin-top: 16px;
 }
 
 .logo{
 	display: inline-block;
 	width:270px;
-	height: 50px;
-	background-image: url(../images/logotest.png);
+	height: 70px;
+	background-image: url(../images/DGK-CIS-logo.png);
 	background-position: left;
 	/*撐滿容器*/
 	background-size: contain;
@@ -35,12 +39,21 @@
 	overflow: hidden;
 }
 
+
 /*menu*/
 .menu{
 	position: absolute;
+	top: 32px;
+	right: 32px;
+}
+
+.page-menu{
+	position: absolute;
 	top: 0;
 	right: 0;
+	margin-top: 16px;
 }
+
 .menu-list{
 	text-align: right;
 }
@@ -52,11 +65,88 @@
 	line-height: 60px;
 }
 
+/*------------------------------------*\
+  start mobile menu
+\*------------------------------------*/
+
+.mobile-menu{
+	position: fixed;
+	top: 40px;
+	right: 24px;
+	z-index: 999;
+	background-color: #000;
+	padding:12px;
+	border-radius: 4px;
+}
+
+.page-mobile-menu{
+	position: fixed;
+	top: 20px;
+	right: 24px;
+	z-index: 999;
+	background-color: #000;
+	padding:12px;
+	border-radius: 4px;
+}
+/*------------------------------------*\
+  end mobile menu
+\*------------------------------------*/
+
+
+
 /*banner*/
 .banner{
-	margin: 0 auto;
+	margin: 0 32px;
 	position: relative;
-	top: 160px;
+	top: 140px;
+}
+
+.banner-title{
+	text-align: left;
+	padding-top: 16px;
+}
+
+.banner-line{
+	width: 40px;
+	display: block;
+	margin-top:24px;
+	border-bottom: 2px solid #fff;
+}
+
+.banner-description{
+	text-align: left;
+	line-height: 1.6em;
+	padding-top: 16px;
+}
+
+.banner-button{
+	text-align: left;
+	margin-top: 32px;
+}
+
+.banner-button .btn{
+	margin: 0px;
+}
+
+@media(max-width: 1024px){
+	/*banner*/
+	.banner{
+		margin: 0 32px;
+		position: relative;
+		top: 140px;
+	}
+	.banner-title{
+		text-align: center;
+	}
+	.banner-line{
+		margin: 24px auto 0 auto;
+	}
+	.banner-description{
+		text-align: center;
+	}
+	.banner-button{
+		text-align: center;
+	}
 }
 
 /*------------------------------------*\
@@ -66,7 +156,7 @@
 .service{
 	background-color: #fff;
 	text-align: center;
-	margin: 30px 0;
+	margin: 40px 0;
 }
 
 .service-content{
@@ -104,20 +194,36 @@
 	background-position: center;
 }
 
+@media(max-width: 1024px){
+	.service{
+		background-color: #fff;
+		text-align: center;
+		margin-bottom: 0px;
+		padding:0 24px;
+	}	
+	.service-content{
+		padding: 0px;
+	}
+	.service-image-container{
+		width:72%;
+		display: block;
+		margin: 0 auto;
+	}
+}
+
 /*------------------------------------*\
   program
 \*------------------------------------*/
 
 .program{
-	height: 1150px;
 	background-color: #f0f0f0;
 	-webkit-clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 90%);
 	clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 90%);
-	padding-top: 200px;
+	padding: 160px 0;
 }
 
 .program-content{
-	margin: 80px 0 40px 0;
+	padding: 32px 0;
 	text-align: center;
 }
 
@@ -129,12 +235,26 @@
 	margin-top: 24px;
 }
 
+@media(max-width: 1024px){
+	.program{
+		background-color: #f0f0f0;
+		-webkit-clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 90%);
+		clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 90%);
+		padding: 240px 0;
+	}
+	.program-content{
+		padding: 0px 24px;
+		margin: 40px 0;
+		text-align: center;
+	}
+}
+
 /*------------------------------------*\
   program-內頁
 \*------------------------------------*/
 
 .program-bg{
-	height: 1000px;
+	/*height: 1400px;*/
 	background-color: #f0f0f0;
 	padding-top: 80px;
 }
@@ -143,6 +263,68 @@
 	margin: 80px 0 40px 0;
 	text-align: center;
 }
+
+@media(max-width: 1024px){
+	.program-list-content{
+		margin: 80px 0 0 0;
+		text-align: center;
+	}
+}
+
+/* mobile-tab */
+/*@clr-tab--active: #0076c8;
+@clr-tab--inactive: black;
+
+
+tr {
+  &:nth-child(odd) {
+    background: #efefef;
+  }
+}
+
+td, th {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background: darken(@clr-tab--active, 15%);
+  color: white;
+  &[data-tabbedTable] {
+    background: @clr-tab--active;
+  }
+}*/
+
+.tabbedTable-labels {
+  text-align: center;
+}
+
+label {
+	width: 30%;
+  background: black;
+  color: white;
+  border-radius: 5px 5px 0 0;
+  padding: 12px 15px 10px 15px;
+  margin-right: 8px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  &.tabbedTable-label--active {
+    background: @clr-tab--active;
+  }
+}
+
+label:last-child {
+	margin-right: 0;
+}
+
+.tabbedTable {
+  width: 100%;
+  margin: 0 0 20px 0;
+  background-color: #fff;
+}
+
+
 
 /*------------------------------------*\
   progjects
@@ -231,8 +413,6 @@
 	background-position: center;
 }
 
-
-
 .pj4-image-container{
 	width: 100%;
 	display: block;
@@ -308,11 +488,12 @@
 \*------------------------------------*/
 
 .contact{
-	height: 1180px;
+	width: 100%;
 	background-color: #f5bd26;
 	-webkit-clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%);
 	clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%);
 	padding-top: 160px;
+	line-height: 40px;
 }
 
 .contact-content{
@@ -335,16 +516,16 @@
 	background-color: #fff;
 	border-radius: 8px;
 	box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
-	margin: 80px auto;
+	margin-top: 80px;
 	padding: 16px;
 }
 
 .map-button{
 	text-align: right;
+	padding-top: 24px;
 }
 
 .footer{
-	height: 460px;
 	background-color: #000;
 	-webkit-clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 100%);
 	clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 100%);
@@ -352,33 +533,84 @@
 }
 
 .footer-content{
-	padding-top: 340px;
+	padding-top: 424px;
+	padding-bottom: 80px;
 }
 
+.footer-logo{
+	/*display: inline-block;*/
+	width: 140px;
+	height: 140px;
+	background-image: url(../images/DGK-CIS-logo.png);
+	background-position: left;
+	/*撐滿容器*/
+	background-size: contain;
+	background-repeat: no-repeat;
+	/*文字溢出*/
+	text-indent: 100%;
+	/*不換行*/
+	white-space: nowrap;
+	/*超出隱藏*/
+	overflow: hidden;
+	padding: 8px;
+	float: left;
+}
+
+.info{
+	padding: 32px 16px 0 16px;
+	float: left;
+}
+
+@media(max-width: 1024px){
+	.footer{
+		padding-bottom: 40px;
+	}
+
+	.info{
+		padding: 0px;
+		float: left;
+	}
+
+}
 /*------------------------------------*\
   copyright
 \*------------------------------------*/
 
 .copyright{
 	background-color: #f5bd26;
+	width: 100%;
 	height: 36px;
 	text-align: center;
-	line-height: 44px;
+	line-height: 32px;
 	font-size: 12px;
 	font-weight: 400;
+	margin: 0 auto;
+	display: inline-block;
 }
 
 .gototop{
   float: right;
   position: fixed;
-  bottom: 56px;
-  right: 32px;
+  bottom: 48px;
+  right: 24px;
   z-index: 99;
   border: none;
   outline: none;
   cursor: pointer;
 }
 
+@media(max-width: 1024px){
+	.copyright{
+		background-color: #f5bd26;
+		height: 48px;
+		text-align: center;
+		line-height: 48px;
+		font-size: 8px;
+		font-weight: 400;
+		letter-spacing: 0.4px;
+	}
+
+}
 
 
 

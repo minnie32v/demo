@@ -13,7 +13,7 @@
 		<link rel="stylesheet" href="css/font.css">
 		<link rel="stylesheet" href="css/button.css">
 		<link rel="stylesheet" href="css/layout.css">
-		<link rel="icon" href="images/favicon.jpg" type="images/x-icon">
+		<link rel="icon" href="images/DGK-CIS-favicon.png" type="images/x-icon">
 		<!-- 瀑布流 -->
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<!-- hover -->
@@ -22,6 +22,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/hamburger.css">
 	</head>
 	<body>	
 	<div id="totop" class="wrapper">
@@ -33,13 +34,31 @@
 			</a>
 		</div>
 		<!-- end gototop -->
+		<!-- start mobile-menu -->
+		<div class="page-mobile-menu web-hidden">
+			 <nav role="navigation">
+			    <div id="menuToggle">
+			      <input type="checkbox" />
+			      <span></span>
+			      <span></span>
+			      <span></span>
+			      <ul id="menu">
+			        <a href="program.html"><li><h3>SERVICE</h3></li></a>
+			        <a href="program.html"><li><h3>PROGRAM</h3></li></a>
+			        <a href="#PROJECTS"><li><h3>PROJECTS</h3></li></a>
+			        <a href="#CONTACT"><li><h3>CONTACT</h3></li></a>
+			      </ul>
+			    </div>
+			 </nav>
+		</div>
+		<!-- end mobile-menu -->
 		<!-- start header -->
 		<div class="header">
 			<div class="container">
-				<a href="index.html" class="logo logo-content">睿弘數位國際股份有限公司</a>
-				<div class="menu">
+				<a href="index.html" class="logo page-logo-content">睿弘數位國際股份有限公司</a>
+				<div class="page-menu mobile-hidden">
 					<ul class="menu-list">
-						<li class="menu-item"><a href="file:///Users/chengjuhan/Desktop/dgk/index.html#SERVICE" class="yellow-font"><h4>SERVICE</h4></a></li>	
+						<li class="menu-item"><a href="program.html" class="yellow-font"><h4>SERVICE</h4></a></li>	
 						<li class="menu-item"><a href="program.html" class="yellow-font"><h4>PROGRAM</h4></a></li>	
 						<li class="menu-item"><a href="#" class="yellow-font"><h4>PROJECTS</h4></a></li>	
 						<li class="menu-item"><a href="#CONTACT" class="yellow-font"><h4>CONTACT</h4></a></li>	
@@ -158,48 +177,47 @@
 			<!-- start contact -->
 			<div id="CONTACT" class="contact">
 				<div class="container">
-						<div class="title"><h1>CONTACT</h1></div>
-						<div class="line"></div>
-						<div class="contact-content">
-							<h3>歡迎來信，由專人為您免費諮詢！</h3>
-						</div>
-						<div class="button">
-								<a href="mailto:service@digikal.com?Subject=Hello%20again" class="btn btn-info">
-									<i class="fas fa-envelope"></i>&nbsp;立即諮詢
-								</a>
-						</div>
-						<div class="map-card">
-							<div id="map"></div>
-						</div>
+					<div class="title"><h1>CONTACT</h1></div>
+					<div class="line"></div>
+					<div class="contact-content">
+						<h3>歡迎來信，由專人為您免費諮詢！</h3>
+					</div>
+					<div class="button">
+							<a href="mailto:service@digikal.com?Subject=Hello%20again" class="btn btn-info">
+								<i class="fas fa-envelope"></i>&nbsp;立即諮詢
+							</a>
+					</div>
+					<div class="map-card">
+						<div id="map"></div>
+					</div>
 				</div>
 				<div class="footer">
-						<div class="container">
-							<div class="footer-content">
-								<div class="row">
-									<div class="col-lg-3">
-										<a href="index.html" class="logo">睿弘數位國際股份有限公司</a>
+					<div class="container">
+						<div class="footer-content">
+							<!-- <div class="row"> -->
+								<!-- <div class="col-lg-2"> -->
+									<a href="index.html" class="footer-logo mobile-hidden">睿弘數位股份有限公司</a>
+								<!-- </div> -->
+								<!-- <div class="col-lg-7"> -->
+									<div class="info white-font">
+										<p><i class="fas fa-map-marker-alt"></i>&nbsp;<a href="https://goo.gl/maps/oCUkqmT1hR42" target="_blank" class="white-font">台北市大安區忠孝東路三段136號5樓之一</a></p>
+										<p><i class="fas fa-phone"></i><a href="tel:02-2771-0968" class="white-font">(02) 2771-0968</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="tel:0917-168-195" class="white-font">0917-168-195</a></p>
+										<p><i class="fas fa-envelope"></i>&nbsp;<a href="mailto:service@digikal.com?Subject=Hello%20again" class="white-font" target="_top">service@digikal.com</a></p>
 									</div>
-									<div class="col-lg-6">
-										<div class="white-font">
-											<p><i class="fas fa-map-marker-alt"></i>&nbsp;<a href="https://goo.gl/maps/oCUkqmT1hR42" target="_blank" class="white-font">台北市大安區忠孝東路三段136號5樓之一</a></p>
-											<p><i class="fas fa-phone"></i><a href="tel:02-2771-0968" class="white-font">(02) 2771-0968</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="tel:0917-168-195" class="white-font">0917-168-195</a></p>
-											<p><i class="fas fa-envelope"></i>&nbsp;<a href="mailto:service@digikal.com?Subject=Hello%20again" class="white-font" target="_top">service@digikal.com</a></p>
-
-										</div>
+								<!-- </div> -->
+								<!-- <div class="col-lg-3"> -->
+									<div class="map-button mobile-hidden">
+											<a href="https://goo.gl/maps/oCUkqmT1hR42" target="_blank" class="btn btn-primary ">
+												<i class="fas fa-map-marker-alt"></i>&nbsp;Google Map
+											</a>
 									</div>
-									<div class="col-lg-3">
-										<div class="map-button">
-												<a href="https://goo.gl/maps/oCUkqmT1hR42" target="_blank" class="btn btn-primary ">
-													<i class="fas fa-map-marker-alt"></i>&nbsp;Google Map
-												</a>
-										</div>
-									</div>
-								</div>
+								<!-- </div> -->
 							</div>
 						</div>
+					</div>
 				</div>
 				<div class="copyright">
-						Copyright © 2018 睿弘數位國際股份有限公司 | All Rights Reserved
+					Copyright © 2018 睿弘數位股份有限公司 | All Rights Reserved
 				</div>
 			</div>
 			<!-- end contact -->
@@ -234,7 +252,7 @@
 					viewportFactor : 0.2
 				} );
 
-				// 毛點跳轉動畫
+				// 錨點慢慢滑過
 				$(document).on("click", 'a[href^="#"]', function(event) {
 				  event.preventDefault();
 
@@ -257,7 +275,7 @@
 				});
 
 				// 固定滑動區塊
-				$(document).scrollScope();
+				/*$(document).scrollScope();*/
 
 				// 地圖
 		      	function initMap() {

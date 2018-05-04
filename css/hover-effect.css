@@ -1,9 +1,4 @@
 /* Common style */
-.projects-list{
-	height: 600px;
-	overflow-y: scroll;
-}
-
 .grid figure {
 	/*position: relative;*/
 	/*float: left;*/
