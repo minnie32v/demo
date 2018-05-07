@@ -3,6 +3,7 @@
 box-sizing: border-box;
 position:relative;
 /*border: solid 1px #000;*/
+font-family: 'Noto Sans Kannada', sans-serif;
 }
 .clearfix{
 display: block;
