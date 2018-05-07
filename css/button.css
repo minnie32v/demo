@@ -10,6 +10,7 @@
 	text-align: center;
 	line-height: 48px;
 	font-weight: 400;
+	font-family: 'Noto Sans TC', sans-serif;
 	font-size: 16px;
 	display: inline-block;
 	margin: 8px;
@@ -23,6 +24,7 @@
 	text-align: center;
 	line-height: 48px;
 	font-weight: 400;
+	font-family: 'Noto Sans TC', sans-serif;
 	font-size: 16px;
 	display: inline-block;
 	margin: 0 8px;
@@ -80,6 +82,7 @@
 	border-radius: 99px;
 	text-align: center;
 	line-height: 36px;
+	font-family: 'Noto Sans TC', sans-serif;
 	font-size: 16px;
 	display: inline-block;
 	margin: 0 auto;
