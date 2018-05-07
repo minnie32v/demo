@@ -279,14 +279,17 @@ height:100%;
 	}
 }
 
-
 table{
 	border-collapse:collapse;
+	background-color: #fff;
+	width: 100%;
 }
 
 th{
 	height: 80px;
-	width: 20%;
+	padding: 8px;
+	line-height: 24px;
+	width: 25%;
 }
 
 td{
@@ -299,9 +302,34 @@ th,td{
 	text-align: center;
 }
 
+
+@media (max-width: 1024px) {
+	table{
+		border-collapse:collapse;
+		background-color: #fff;
+	}
+
+	th{
+		height: 80px;
+		padding: 8px;
+		line-height: 24px;
+
+	}
+
+	td{
+		height: 56px;
+		line-height: 32px;
+		padding: 8px;
+		width: 90%;
+	}
+
+	th,td{
+		text-align: center;
+	}
+}
+
 .tbody th,.tbody td{
 	border: solid 1px #F0F0F0;
-	background-color: #fff;
 }
 
 .bg-light-gray{
