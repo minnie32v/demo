@@ -230,3 +230,14 @@ figure.effect-jazz:hover p {
 		width: 100%;
 	}
 }
+
+
+/*mobile no hover*/
+@media (max-width: 1024px) {
+	figcaption{
+		display: none;
+	}
+}
+
+
+
